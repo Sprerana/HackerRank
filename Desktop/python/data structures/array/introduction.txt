@@ -1,0 +1,79 @@
+import array
+arr=array.array('i',[1,2,3,4,3,5]) #*i-signed, I-unsigned, f-float, d-double, b-signed char, B-unsigned char
+				 #arrays generally used for same data type
+				 #lists are heterogeneous
+arr.append(6)
+print("after appending")
+for i in range(len(arr)):
+	print(arr[i],end=" ")
+print("\n")
+
+arr.insert(4,8)
+print("after insertion")
+for i in range(len(arr)):
+	print(arr[i],end=" ")
+print("\n")
+
+print(arr.pop(3)) #removes the value whose position mentioned in args
+print("after popping")
+for i in range(len(arr)):
+	print(arr[i],end=" ")
+print("\n")
+
+print(arr.remove(1))#returns first occurence of the value in arguments
+
+print("after removing")
+for i in range(len(arr)):
+	print(arr[i],end=" ")
+print("\n")
+
+print(arr.index(5))#removes the index of value in args
+	
+arr.reverse()
+print("after reversal")
+for i in range(len(arr)):
+	print(arr[i],end=" ")
+print("\n")
+
+arr1=array.array('i',[10,11,12])
+arr.extend(arr1)
+print("after concatenation")
+for i in range(len(arr)):
+	print(arr[i],end=" ")
+print("\n")
+
+
+lis2=arr.tolist() #convert array to list
+for i in range(len(lis2)):
+	print(lis2[i],end=" ")
+print("\n")
+
+
+print(arr.count(3))#no of occurences of the value
+
+print(arr.itemsize) #returns size in bytes of element
+
+arr1.fromlist(lis2) #append array with list
+for i in range(len(arr1)):
+	print(arr1[i],end=" ")
+print("\n")
+
+
+
+
+
+
+arr2=array.array('i',[3,6,9])
+for j in range(len(arr2)):
+	print(arr2[j]/3,end=" ")#this cannot be done on lists(difference)
+
+
+
+
+
+
+	
+	
+
+
+

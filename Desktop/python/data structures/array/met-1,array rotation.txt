@@ -1,0 +1,17 @@
+import array
+list1=[1,2,3,4]
+def left_rotate(arr,d,n):
+	for i in range(0,d):
+		left_rotate_by_one(arr,n)
+	print_array(arr,n)
+def left_rotate_by_one(arr,n):
+	temp=arr[0]
+	for i in range(0,n-1):
+		arr[i]=arr[i+1]
+	arr[n-1]=temp
+def print_array(arr,n):
+	for i in range(0,n):
+		print(arr[i],end=' ')
+
+left_rotate(list1,1,4)
+
